@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e189d5;
+    color: #4b5a9b;
+   
+}   
+
+
+nav {
+    background-color: #000000;
+    padding: 25px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    gap: 25px;
+    
+}
+#logo{
+   margin-right: auto;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    color: #da94ef;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #e189d5;
+    gap: 40px;
+}
+
+.reclama {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+    height: 300px;
+    margin-top: 110px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.reclama h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.reclama .poza {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.reclama button {
+  
+    background-color: #bd1bc3;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reclama button:hover {
+    background-color: #73307f;
+}
+
+
+section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #e189d5;
+    
+}
+.brand-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff; /* Fundal alb pentru bara */
+    padding: 15px 0;
+    width: 170px;
+    left: 0;
+     top: 70px;
+     height: 1520px;
+    position: absolute;
+    
+
+}
+.brand-bar2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff; /* Fundal alb pentru bara */
+    padding: 15px 0;
+    width: 170px;
+    right   : 0;
+     top: 70px;
+     height: 1520px;
+    position: absolute;
+
+}
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 200px;
+    position: relative;
+    padding: 60px;
+
+}
+
+footer h5 {
+    font-size: 14px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principală</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="home-link">Home</a>
+            <a href="men.html">Men</a>
+            <a href="women.html">Women</a>
+            <a href="kids.html">Kids</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="brand-bar">
+        <img src="IMGbrand/logo-adidas.png" alt="Adidas">
+        <img src="IMGbrand/logo-columbia.png" alt="Columbia">
+        <img src="IMGbrand/under armour-170x80.webp" alt="Under Armour">
+        <img src="IMGbrand/logo-ea7.png" alt="EA7">
+        <img src="IMGbrand/logo-puma.png" alt="PUMA">
+        <img src="IMGbrand/logo-reebok.png" alt="Reebok">
+        <img src="IMGbrand/logo-NIKE.png" alt="NIKE">
+    </div>
+
+    <main class="products">
+        <h1>Popular Products</h1>
+
+        <div class="product-card">
+            <h3>NIKE</h3>
+            <img src="images/nike.jpg" alt="Nike">
+            <p>1200 Lei</p>
+            <a href="#" class="btn-green" onclick="showPopup()">Cumpără acum</a>
+        </div>
+
+        <div class="product-card">
+            <h3>Adidas</h3>
+            <img src="images/tricou-women-adidas.jpg" alt="Adidas">
+            <p>250 Lei</p>
+            <a href="#" class="btn-green" onclick="showPopup()">Cumpără acum</a>
+        </div>
+
+        <h2 class="discount-title">Discounts and Promotions</h2>
+
+        <div class="product-card">
+            <img src="images/reebok-tricou-barbati.jpg" alt="Tricou Reebok">
+            <h3>REEBOK</h3>
+            <div class="low">
+                <p><span class="old-price">500 Lei</span> 300 Lei</p>
+            </div>
+            <a href="#" class="btn-green" onclick="showPopup()">Cumpără acum</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/tricou-nike-barbati.jpg" alt="Pantofi Nike">
+            <h3>NIKE</h3>
+            <p><span class="old-price">1200 Lei</span> 800 Lei</p>
+            <a href="#" class="btn-green" onclick="showPopup()">Cumpără acum</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/tricou-adidas-barbati.jpg" alt="Tricou Adidas">
+            <h3>ADIDAS</h3>
+            <p><span class="old-price">400 Lei</span> 250 Lei</p>
+            <a href="#" class="btn-green" onclick="showPopup()">Cumpără acum</a>
+        </div>
+
+        <div class="product-card">
+            <img src="images/tricou-puma-barbati.jpg" alt="Pantofi Puma">
+            <h3>PUMA</h3>
+            <p><span class="old-price">800 Lei</span> 550 Lei</p>
+            <a href="#" class="btn-green" onclick="showPopup()">Cumpără acum</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <h5>Contacteaza-ne pe gmail: betivudorin@gmail.com</h5>
+        </div>
+    </footer>
+
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <span id="closePopupBtn" class="close">&times;</span>
+            <h2>Logare pe site</h2>
+            <form id="loginForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Introdu email-ul" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Parolă:</label>
+                    <input type="password" id="password" name="password" placeholder="Introdu parola" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn-green">Logare</button>
+                </div>
+            </form>
+            <p>Nu ai un cont? <a href="#">Înregistrează-te acum!</a></p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

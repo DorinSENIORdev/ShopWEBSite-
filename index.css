@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #95bfe7;
+    color: #333;
+}
+
+header {
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    background-color: #d5bdbd;
+    padding: 1rem 0;
+    gap: 29px;
+    width: 100%;
+    position: absolute;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: x-large;
+    margin-right: 18px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+header nav .home-link {
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+.products {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.products h1 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 15px;
+    display: inline-flex; /* Folosește flexbox */
+    flex-direction: column; /* Aranjare verticală */
+    justify-content: space-between; /* Spații uniforme între elemente */
+    width: 200px; /* Setați o lățime fixă */
+    height: auto; /* Setați o înălțime fixă */
+    text-align: center; /* Centrare text */
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: auto; /* Asigură spațiere între imagine și alte elemente */
+}
+
+.product-card h2 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+    padding: 5px;
+    margin-top: auto; /* Plasează prețul în partea de jos */
+}
+.btn-green {
+    display: flex;
+    justify-content: center; /* Centrează textul orizontal */
+    align-items: center; /* Centrează textul vertical */
+    background-color: #28a745; /* Verde */
+    color: #fff; /* Text alb */
+    text-decoration: none; /* Fără subliniere */
+    font-size: 1.2em; /* Dimensiune text */
+    font-weight: bold; /* Text îngroșat */
+    height: 40px; /* Ajustează înălțimea butonului */
+    width: 150px; /* Lățimea butonului */
+    border-radius: 5px; /* Colțuri rotunjite */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Umbra butonului */
+    text-align: center;
+    margin-left: 25px;
+}
+
+.btn-green:hover {
+    background-color: #218838; /* Verde mai închis la hover */
+}
+
+.btn-green:active {
+    background-color: #1e7e34; /* Verde mai intens la click */
+    transform: scale(0.95); /* Micșorare ușoară la click */
+}
+
+
+.old-price {
+    text-decoration: line-through;
+    color: red;
+    font-size: 1em;
+    margin-right: 10px;
+}
+
+.brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 25px 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.brand-bar img {
+    max-width: 200px; 
+    opacity: 0.7; 
+}
+
+
+.brand-bar img:hover {
+    opacity: 1; 
+}
+
+.view-all-brands {
+    font-size: 1em;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.view-all-brands:hover {
+    text-decoration: underline;
+}
+/* Stiluri pentru popup */
+.popup {
+    display: none; /* Inițial, popup-ul este ascuns */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundal semitransparent */
+    z-index: 1001; /* Popup-ul să fie deasupra altor elemente */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Conținutul popup-ului */
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+/* Stiluri pentru butonul de închidere */
+.close-btn {
+    color: #aaa;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+}
+
+/* Efect de hover pe butonul de deschidere */
+#openPopupBtn {
+    cursor: pointer;
+}
+
+#openPopupBtn:hover {
+    background-color: #218838; /* Verde mai închis la hover */
+}
+/* Stiluri pentru formularul din popup */
+.popup-content h2 {
+    font-size: 2.8em;
+    margin-bottom: 80px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    width: 200px;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+.popup-content p {
+    margin-top: 15px;
+}
+
+.popup-content a {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.popup-content a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #d5bdbd;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%; 
+    left: 0;
+    right: 0;
+    margin-top: 200px;
+}
+
+footer h5 {
+    font-size: 24px;
+}
